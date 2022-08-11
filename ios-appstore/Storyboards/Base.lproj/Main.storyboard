@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Q2-DZ-Ysv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,23 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Apps-->
         <scene sceneID="pus-sg-hJw">
             <objects>
-                <viewController id="jkT-Pk-fr8" sceneMemberID="viewController">
+                <viewController id="jkT-Pk-fr8" customClass="AppsViewController" customModule="ios_appstore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P9g-ug-z0j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WHG-GO-CIb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KoF-Kr-3GU"/>
+                    <navigationItem key="navigationItem" title="Apps" id="KoF-Kr-3GU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arK-mD-hrk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="438" y="566"/>
         </scene>
-        <!--View Controller-->
+        <!--Games-->
         <scene sceneID="2Sy-Zr-aU1">
             <objects>
                 <viewController id="pb3-w3-eFw" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="HUY-14-LuJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3WJ-fH-xPN"/>
+                    <navigationItem key="navigationItem" title="Games" id="3WJ-fH-xPN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVX-uM-Tia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,8 +50,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="aDm-Rs-bhy" kind="relationship" relationship="viewControllers" id="9I8-Hc-6ES"/>
                         <segue destination="2cu-bd-418" kind="relationship" relationship="viewControllers" id="o3f-zu-swr"/>
+                        <segue destination="aDm-Rs-bhy" kind="relationship" relationship="viewControllers" id="9I8-Hc-6ES"/>
                         <segue destination="ejk-pg-OOe" kind="relationship" relationship="viewControllers" id="LXY-hi-vdu"/>
                         <segue destination="1gf-Gp-191" kind="relationship" relationship="viewControllers" id="4ae-qf-N1c"/>
                     </connections>
@@ -64,10 +64,10 @@
         <scene sceneID="vcV-8S-F6h">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2cu-bd-418" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Apps" selectedImage="square.3.stack.3d.top.filled" catalog="system" id="zDn-SM-omD"/>
+                    <tabBarItem key="tabBarItem" title="Apps" image="square.stack.3d.up.fill" catalog="system" selectedImage="square.stack.3d.up" id="zDn-SM-omD"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yhu-yK-fTW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Yhu-yK-fTW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -83,10 +83,10 @@
         <scene sceneID="nUo-AD-AbF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aDm-Rs-bhy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" selectedImage="gamecontroller.fill" catalog="system" id="ddc-fb-1NF"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="gamecontroller.fill" catalog="system" selectedImage="gamecontroller" id="ddc-fb-1NF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eSb-vZ-xCA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="eSb-vZ-xCA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="1284" y="-165"/>
         </scene>
-        <!--View Controller-->
+        <!--ARCADE-->
         <scene sceneID="FKX-qm-x0B">
             <objects>
                 <viewController id="9k0-bH-b8W" sceneMemberID="viewController">
@@ -108,7 +108,7 @@
                         <viewLayoutGuide key="safeArea" id="WUw-3U-62e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="m5B-3e-E6t"/>
+                    <navigationItem key="navigationItem" title="ARCADE" id="m5B-3e-E6t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YK2-JZ-vnY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,10 +118,10 @@
         <scene sceneID="hOq-Cc-iRX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ejk-pg-OOe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Arcade" selectedImage="rays" catalog="system" id="xz4-Ti-vF1"/>
+                    <tabBarItem key="tabBarItem" title="Arcade" image="rays" catalog="system" selectedImage="rays" id="xz4-Ti-vF1"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSu-Nu-JVd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gSu-Nu-JVd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -133,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="2059" y="-165"/>
         </scene>
-        <!--View Controller-->
+        <!--SEARCH-->
         <scene sceneID="Nlz-oJ-zwe">
             <objects>
                 <viewController id="daB-e0-ExK" sceneMemberID="viewController">
@@ -143,7 +143,7 @@
                         <viewLayoutGuide key="safeArea" id="vtE-Dm-CZs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RpZ-5B-XQl"/>
+                    <navigationItem key="navigationItem" title="SEARCH" id="RpZ-5B-XQl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1u-R9-CZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,8 +155,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1gf-Gp-191" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="feb-uJ-kfb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d5m-Cq-Bxl">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="d5m-Cq-Bxl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -170,9 +170,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
         <image name="rays" catalog="system" width="128" height="122"/>
-        <image name="square.3.stack.3d.top.filled" catalog="system" width="128" height="124"/>
+        <image name="square.stack.3d.up" catalog="system" width="128" height="124"/>
+        <image name="square.stack.3d.up.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
